@@ -1,29 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-  
-  <title>Frontend Mentor | QR code component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+  <style>
+    body{
+     background-color: var(--Yellow);
+     padding: 0;
+     margin: 0;
+     box-sizing: content-box;
+     font-family: Figtree;
+    }
+    :root {
+      --Yellow: hsl(47, 88%, 63%);
+      --White: hsl(0, 0%, 100%);
+      --Gray500: hsl(0, 0%, 42%);
+      --Gray950: hsl(0, 0%, 7%);
+    }
+    main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container{
+      width: 250px;
+      padding: 15px;
+      background-color: var(--White);
+      border-radius: 15px;
+      border: 1px solid var(--Gray500);
+      box-shadow: 7px 5px 0px 0px rgba(0,0,0,1);
+    }
+    .image > img{
+     width: 100%;
+     border-radius: 8px;
+    }
+    p,h1{
+      margin: 0;
+    }
+    h1{
+      font-weight: 500;
+    }
+    .stage{
+      background-color: var(--Yellow);
+      padding: 5px 10px;
+      border-radius: 5px;
+      width: 60px;
+      text-align: center;
+      margin: 12px 0 10px 0;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .profile{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .profile > img{
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+    .profile > p{
+      font-size: clamp(12px, 2vw,14px);
+     font-weight: 700;
+    }
+    .para{
+     font-size:  clamp(12px, 2vw,14px);
+     color: var(--Gray500);
+     line-height: 1rem;
+    }
+    h1{
+      font-size:  clamp(16px, 2vw,18px);
+      font-weight: 800;
+      margin-bottom: 12px;
+      margin-top: 10px;
+    }
+    .date{
+      font-size: clamp(12px, 2vw,14px);
+    }
+    @media (min-width: 768px){
+      .container{
+        width: 250px;
+      }
+    }
+    @media (max-width: 768px){
+      .container{
+        width: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
   <main>
     <div class="container">
-        <img src="images/image-qr-code.png" alt="QR code">
-      <div class="text">
-        <h1>Improve your front-end skills by building projects</h1>
-        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      <div class="image">
+        <img src="./assets/images/illustration-article.svg" alt="">
       </div>
+      <div class="stage">Learning</div>
+      <p class="date">Piblishing 21 Dec 2023</p>
+      <h1>HTML & CSS foundations</h1>
+      <p class="para">These languages are the backbone of every website, defining structure, content and presentation.</p>
+      <div class="profile">
+        <img src="./assets/images\image-avatar.webp" alt="">
+        <p>Greg Hopper</p>
+      </div>
+    </div>
   </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Anthony</a>.
-  </div>
+
 </body>
+
 </html>
