@@ -1,3 +1,3 @@
 console.log('hello changed');
-console.log('sync')
-console.log('synced')
+console.log('sync');
+console.log('syced');
